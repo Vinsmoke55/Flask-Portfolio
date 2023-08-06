@@ -4,12 +4,12 @@
 	<title>portfolio</title>
 	<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="h-screen bg-gradient-to-b from-teal-700 to-teal-950">
-	<header class="bg-teal-800">
-		<ul class="space-x-20 flex justify-center text-2xl">
-			<li>Home</li>
-			<li>Works</li>
-			<li>Contact</li>
+<body class="h-screen bg-gradient-to-b from-teal-700 to-teal-950 overflow-hidden">
+	<header class="bg-teal-800 pb-1 mx-96 rounded-full mt-5 ">
+		<ul class="space-x-20 flex justify-center text-2xl font-semibold">
+			<li class="hover:text-teal-600"><a href="{{url_for('home')}}">Home</a></li>
+			<li class="hover:text-teal-600"><a href="{{url_for('works')}}">Works</a></li>
+			<li class="hover:text-teal-600"><a href="{{url_for('contact')}}">Contact</a></li>
 		</ul>
 	</header>
 
@@ -18,9 +18,9 @@
 		{%endblock%}
 	</div>
 
-	<footer class="bg-teal-700">
-		<div class="h-24 flex justify-center">
-			<ul class="py-5 text-2xl">
+	<footer class="bg-teal-800 rounded-full mx-10">
+		<div class="h-20 flex justify-center">
+			<ul class=" text-2xl font-semibold">
 				<li>©  2023 </li>
 				<li> VINANK</li>
 			</ul>
