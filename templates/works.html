@@ -1,4 +1,17 @@
 {%extends 'layout.html'%}
 {%block content%}
-	<h1>Works Page</h1>
+	<div class="flex flex-row space-x-20 justify-center pt-20">
+			<div class="w-64 h-64 bg-red-100 relative rounded-lg">
+  				<div class="absolute inset-0 bg-cover bg-center z-0 rounded-lg" style="background-image: url('{{url_for('static',filename='avatar.png')}}')"></div>
+  				<div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-6xl text-black font-semibold">Ayush</div>
+			</div>
+			<div class="w-64 h-64 bg-red-100 relative rounded-lg">
+  				<div class="absolute inset-0 bg-cover bg-center z-0 rounded-lg" style="background-image: url('{{url_for('static',filename='avatar.png')}}')"></div>
+  				<div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-6xl text-black font-semibold">Ayush</div>
+			</div>
+			<div class="w-64 h-64 bg-red-100 relative rounded-lg">
+  				<div class="absolute inset-0 bg-cover bg-center z-0 rounded-lg" style="background-image: url('{{url_for('static',filename='avatar.png')}}')"></div>
+  				<div class="opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex justify-center items-center text-6xl text-black font-semibold">Ayush</div>
+			</div>
+	</div>
 {%endblock%}
