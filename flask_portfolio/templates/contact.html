@@ -1,17 +1,20 @@
 {%extends 'layout.html'%}
 {%block content%}
-	<div class="flex flex-row justify-center">
-		<form method="POST">
-			<div>
-				{{form.username.label}}{{form.username()}}
+	<div class="flex flex-row justify-center pt-24 text-2xl">
+		<form method="POST" action='/contact'>
+			<div class="pb-8 flex">
+				{{form.username.label}}
+				<div class="ml-2">{{form.username()}}</div>
 			</div>
-			<div>
-				{{form.email.label}}{{form.email()}}
+			<div class="pb-8 flex">
+				{{form.email.label}}
+				<div class="ml-14">{{form.email()}}</div>
 			</div>
-			<div>
-				{{form.text.label}}{{form.text()}}
+			<div class="pb-8 flex">
+				{{form.text.label}}
+				<div class="ml-20">{{form.text()}}</div>
 			</div>
-			<div>
+			<div class="border-2 border-black border-solid w-16 hover:bg-teal-600">
 				{{form.submit()}}
 			</div>	
 		</form>
