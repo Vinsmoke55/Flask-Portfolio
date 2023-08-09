@@ -1,5 +1,6 @@
 from flask import render_template,url_for
 from flask_portfolio import app
+from flask_portfolio.forms import ContactForm
 
 @app.route('/')
 @app.route('/home')
@@ -12,4 +13,5 @@ def works():
 
 @app.route('/contact')
 def contact():
-	return render_template('contact.html')
+	form=ContactForm()
+	return render_template('contact.html',form=form)
